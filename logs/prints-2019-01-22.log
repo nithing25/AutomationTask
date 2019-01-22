@@ -1,0 +1,8 @@
+21:56:42.585 [main] INFO  com.puma.in.PlaceOrder - Order Placed
+21:57:01.167 [main] INFO  com.puma.in.PlaceOrder - Added to cart
+22:00:23.530 [main] INFO  com.puma.in.PlaceOrder - Navigated tohttps://in.puma.com
+22:00:30.825 [main] INFO  com.puma.in.PlaceOrder - Clicked on Men Running
+22:00:31.144 [main] INFO  com.puma.in.PlaceOrder - Order Placed
+22:00:47.302 [main] INFO  com.puma.in.PlaceOrder - Added to cart
+22:03:30.560 [main] INFO  com.puma.in.PlaceOrder - Navigated tohttps://in.puma.com
+22:03:34.670 [main] INFO  com.puma.in.PlaceOrder - Clicked on Men Running
