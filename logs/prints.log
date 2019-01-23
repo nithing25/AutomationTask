@@ -1,2 +1,7 @@
 16:21:32.787 [main] INFO  com.puma.in.PlaceOrderTest - Added to cart
 16:21:32.985 [main] INFO  com.puma.in.PlaceOrderTest - Finished order successfully
+16:47:38.142 [main] INFO  com.puma.in.PlaceOrderTest - Navigated tohttps://in.puma.com
+16:47:40.665 [main] INFO  com.puma.in.PlaceOrderTest - Clicked on Men Running
+16:47:40.984 [main] INFO  com.puma.in.PlaceOrderTest - Order Placed
+16:47:54.059 [main] INFO  com.puma.in.PlaceOrderTest - Added to cart
+16:47:54.091 [main] INFO  com.puma.in.PlaceOrderTest - Finished order successfully
