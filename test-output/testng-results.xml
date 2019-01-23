@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="21680" started-at="2019-01-23T10:07:47Z" finished-at="2019-01-23T10:08:08Z">
+  <suite name="Suite" duration-ms="21661" started-at="2019-01-23T10:51:11Z" finished-at="2019-01-23T10:51:33Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="21680" started-at="2019-01-23T10:07:47Z" finished-at="2019-01-23T10:08:08Z">
+    <test name="Test" duration-ms="21661" started-at="2019-01-23T10:51:11Z" finished-at="2019-01-23T10:51:33Z">
       <class name="com.puma.in.PlaceOrderTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.puma.in.PlaceOrderTest@49438269]" name="beforeTest" is-config="true" duration-ms="1527" started-at="2019-01-23T10:07:47Z" finished-at="2019-01-23T10:07:48Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.puma.in.PlaceOrderTest@4c39bec8]" name="beforeTest" is-config="true" duration-ms="1771" started-at="2019-01-23T10:51:11Z" finished-at="2019-01-23T10:51:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="pumaBooking()[pri:0, instance:com.puma.in.PlaceOrderTest@49438269]" name="pumaBooking" duration-ms="19521" started-at="2019-01-23T10:07:48Z" finished-at="2019-01-23T10:08:08Z">
+        <test-method status="PASS" signature="pumaBooking()[pri:0, instance:com.puma.in.PlaceOrderTest@4c39bec8]" name="pumaBooking" duration-ms="19266" started-at="2019-01-23T10:51:13Z" finished-at="2019-01-23T10:51:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pumaBooking -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.puma.in.PlaceOrderTest@49438269]" name="afterTest" is-config="true" duration-ms="104" started-at="2019-01-23T10:08:08Z" finished-at="2019-01-23T10:08:08Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.puma.in.PlaceOrderTest@4c39bec8]" name="afterTest" is-config="true" duration-ms="106" started-at="2019-01-23T10:51:33Z" finished-at="2019-01-23T10:51:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

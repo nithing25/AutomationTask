@@ -12,6 +12,8 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class Base {
 	
 	
@@ -26,18 +28,21 @@ public class Base {
 			FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"/src/main/java/resource/data.properties");
 			prop.load(fis);
 		
+			 WebDriverManager.chromedriver().setup();
+			 
+			 
 		if(browser.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/chromedriver");
+			//System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/chromedriver");
 			driver = new ChromeDriver();
 			
-	}
+	}//hitest1
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
 	public void getScreenshot(String screenshotname) throws IOException {
 		File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(src, new File("./ScreenShot/+"+screenshotname+".png"));
+		FileUtils.copyFile(src, new File(System.getProperty("user.dir")+"/ScreenShot/+"+screenshotname+".png"));
 	}
 
 }

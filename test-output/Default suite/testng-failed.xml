@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.puma.in.CredentialTest">
+      <class name="com.puma.in.PlaceOrderTest">
         <methods>
-          <include name="credsAuthentication"/>
+          <include name="pumaBooking"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
         </methods>
-      </class> <!-- com.puma.in.CredentialTest -->
+      </class> <!-- com.puma.in.PlaceOrderTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

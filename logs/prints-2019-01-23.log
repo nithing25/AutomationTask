@@ -1,7 +1,7 @@
-15:32:21.466 [main] INFO  com.puma.in.PlaceOrderTest - Navigated tohttps://in.puma.com
-15:32:24.667 [main] INFO  com.puma.in.PlaceOrderTest - Clicked on Men Running
-15:32:24.924 [main] INFO  com.puma.in.PlaceOrderTest - Order Placed
-15:36:45.135 [main] INFO  com.puma.in.PlaceOrderTest - Navigated tohttps://in.puma.com
-15:36:47.230 [main] INFO  com.puma.in.PlaceOrderTest - Clicked on Men Running
-15:36:47.532 [main] INFO  com.puma.in.PlaceOrderTest - Order Placed
-15:36:59.981 [main] INFO  com.puma.in.PlaceOrderTest - Added to cart
+16:20:49.416 [main] INFO  com.puma.in.PlaceOrderTest - Clicked on Men Running
+16:20:49.747 [main] INFO  com.puma.in.PlaceOrderTest - Order Placed
+16:21:00.180 [main] INFO  com.puma.in.PlaceOrderTest - Added to cart
+16:21:00.377 [main] INFO  com.puma.in.PlaceOrderTest - Finished order successfully
+16:21:17.418 [main] INFO  com.puma.in.PlaceOrderTest - Navigated tohttps://in.puma.com
+16:21:19.383 [main] INFO  com.puma.in.PlaceOrderTest - Clicked on Men Running
+16:21:19.718 [main] INFO  com.puma.in.PlaceOrderTest - Order Placed
