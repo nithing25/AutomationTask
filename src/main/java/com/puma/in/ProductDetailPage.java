@@ -8,8 +8,8 @@ import org.openqa.selenium.support.PageFactory;
 public class ProductDetailPage {
 
 	public WebDriver driver;
-	
-	@FindBy(xpath="//button[@title='Add to Cart']")
+
+	@FindBy(xpath = "//button[@title='Add to Cart']")
 	public WebElement addCart;
 
 	public ProductDetailPage(WebDriver driver) {
@@ -17,9 +17,7 @@ public class ProductDetailPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	
-	public void addToCart()
-	{
+	public void addToCart() {
 		addCart.click();
 	}
 }

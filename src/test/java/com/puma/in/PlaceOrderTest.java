@@ -5,7 +5,6 @@ import org.testng.annotations.Test;
 import com.puma.in.HomePage;
 import com.puma.in.ShoeListing;
 
-
 import resource.Base;
 
 import org.testng.annotations.BeforeTest;
@@ -16,31 +15,32 @@ import java.util.Set;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 
-public class PlaceOrder extends Base {
+public class PlaceOrderTest extends Base {
 
-	private static Logger log = LogManager.getLogger(PlaceOrder.class.getName());
+	private static Logger log = LogManager.getLogger(PlaceOrderTest.class.getName());
 
 	@Test
 	public void pumaBooking() throws Exception {
-		
+
 		driver.get(prop.getProperty("url"));
-		
-		Assert.assertEquals(driver.getTitle(), prop.getProperty("titleExpected"),"Not navigated to right URL");
-	
-		
+
+		Assert.assertEquals(driver.getTitle(), prop.getProperty("titleExpected"), "Not navigated to right URL");
+
 		log.info("Navigated to" + prop.getProperty("url"));
 
 		HomePage home = new HomePage(driver);
 		home.running();
-		
+
 		log.info("Clicked on Men Running");
 
 		ShoeListing sl = new ShoeListing(driver);
 		sl.placeOrder();
-		
+
 		log.info("Order Placed");
 
 		Set<String> allWindows = driver.getWindowHandles();
@@ -50,30 +50,28 @@ public class PlaceOrder extends Base {
 
 		ProductDetailPage pd = new ProductDetailPage(driver);
 		pd.addToCart();
-		
+
 		log.info("Added to cart");
-		
+
 		CartPage cp = new CartPage(driver);
-		
-		System.out.println(cp.productName.getText());
-		System.out.println(sl.shoeName);
-		//Assert.assertEquals(CartPage.cartProduct, sl.shoeName,"Expected product not added");
-		
+
+		Assert.assertTrue(cp.productName.getText().contains(sl.shoeName));
+
 		log.info("Finished order successfully");
-	 
 
 	}
 
 	@BeforeTest
 	public void beforeTest() throws IOException {
 		initializeDriver("chrome");
-		
 
 	}
 
 	@AfterTest
 	public void afterTest() {
-		// driver.close();
+
+		driver.quit();
+
 	}
 
 }

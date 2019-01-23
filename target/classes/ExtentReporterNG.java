@@ -29,10 +29,7 @@ public class ExtentReporterNG implements IReporter {
             for (ITestResult result : tests.getAllResults()) {
                 test = extent.startTest(result.getMethod().getMethodName());
  
-                /*test.getTest(). = getTime(result.getStartMillis());
-                test.getTest().endedTime = getTime(result.getEndMillis());*/
- 
-                for (String group : result.getMethod().getGroups())
+                    for (String group : result.getMethod().getGroups())
                     test.assignCategory(group);
  
                 String message = "Test " + status.toString().toLowerCase() + "ed";
@@ -56,7 +53,7 @@ public class ExtentReporterNG implements IReporter {
 	@Override
 	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
 		
-		 extent = new ExtentReports("/Users/apple/Downloads/SeleniumWeb/test-output/" + File.separator + "ExtentReportsTestNG.html", true);
+		 extent = new ExtentReports("./test-output" + File.separator + "ExtentReportsTestNG.html", true);
 		 
 	        for (ISuite suite : suites) {
 	            Map<String, ISuiteResult> result = suite.getResults();

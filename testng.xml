@@ -9,7 +9,7 @@
   <test name="Test">
   <parameter name="browser" value="chrome"></parameter>
     <classes>
-      <class name="com.puma.in.PlaceOrder"/>
+      <class name="com.puma.in.PlaceOrderTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

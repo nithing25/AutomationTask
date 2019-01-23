@@ -30,14 +30,14 @@ public class Base {
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/chromedriver");
 			driver = new ChromeDriver();
 			
-	}//hitest1
+	}
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
 	public void getScreenshot(String screenshotname) throws IOException {
 		File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(src, new File("/Users/apple/Downloads/SeleniumWeb/ScreenShot/+"+screenshotname+".png"));
+		FileUtils.copyFile(src, new File("./ScreenShot/+"+screenshotname+".png"));
 	}
 
 }
