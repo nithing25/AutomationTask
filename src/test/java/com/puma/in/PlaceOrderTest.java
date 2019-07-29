@@ -57,6 +57,9 @@ public class PlaceOrderTest extends Base {
 		log.info("Finished order successfully");
 		
 		System.out.println(" Adding sysouts in place order test");
+		System.out.println(" Creating new branch develop");
+		System.out.println(" Creating new branch develop");
+
 		
 
 	}
