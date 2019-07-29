@@ -55,6 +55,9 @@ public class PlaceOrderTest extends Base {
 		Assert.assertTrue(cp.productName.getText().contains(sl.shoeName));
 
 		log.info("Finished order successfully");
+		
+		System.out.println(" Adding sysouts in place order test");
+		
 
 	}
 
